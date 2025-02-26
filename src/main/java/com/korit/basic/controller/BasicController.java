@@ -8,10 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-
 
 
 // Controller 레이어:
@@ -59,6 +56,7 @@ public class BasicController {
   //            - 만약 전송한 데이터가 동일한 데이터가 있다면 수정
   //            - 만약 전송한 데이터가 존재하지 않는 데이터면 생성
   //            - 동일 데이터를 여러 번 전송하더라도 한 번만 적용
+  // Request Body O / Response Body X / HTML form X
   @PutMapping("")
   public String putMethod() {
       return "PUT Method";
@@ -81,12 +79,11 @@ public class BasicController {
   }
 
   // ! 주의 HTTP Method + URL 패턴이 중복되면 런타임 에러가 발생
-  @GetMapping("/duplicate")
-  public void duplicate1() {}
+  // @GetMapping("/duplicate")
+  // public void duplicate1() {}
 
-  @GetMapping("/duplicate")
-  public void duplicate2() {}
-  
+  // @GetMapping("/duplicate")
+  // public void duplicate2() {}
   
 }
 
