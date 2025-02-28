@@ -1,7 +1,5 @@
 package com.korit.basic.exceptionHandler;
 
-import java.net.ResponseCache;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
