@@ -39,3 +39,9 @@
 - 기능 : 사용자가 정보 수정 요청 시 보낼 데이터의 유효성 검사를 담당
 - 주요 필드 : userName, userAddress
 - 유효성 검사 : @NotBlank(공백 유무), @Length(길이 제한)
+
+## JwtProvider
+- 기능 : JWT(Json Web Token)의 생성 및 검증 기능 제공
+- 주요 기능 : create(JWT 생성), validate(JWT 검증), @Value(비밀 키 가져옴)
+
+## JwtAuthenticationFilter
