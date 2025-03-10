@@ -27,7 +27,7 @@ public class RequestDataController {
   // GET http://127.0.0.1:8080/request-data/request-param
   @GetMapping("/request-param")
   public String requestParam(
-    @RequestParam("name") String name,
+    @RequestParam(name="name", required= false) String name,
     @RequestParam(name="age", required=false) Integer age
   ) {
     return "이름 :" + name + "나이 : " + age;

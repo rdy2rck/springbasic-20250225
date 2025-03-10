@@ -45,3 +45,9 @@
 - 주요 기능 : create(JWT 생성), validate(JWT 검증), @Value(비밀 키 가져옴)
 
 ## JwtAuthenticationFilter
+- 기능 : 
+- 주요 기능 : 
+
+## WebSecurityConfig
+- 기능 :
+- 주요 기능 :
